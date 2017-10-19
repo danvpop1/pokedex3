@@ -34,7 +34,6 @@ class PokemonDetailViewController: UIViewController {
         curretEvoImg.image = img
         pokedexLbl.text = "\(pokemon.pokedexId)"
         pokemon.downloadPokemonDetail {
-            //whatever we call here will be called when the network call is complete
             self.updateUI()
         }
     }
